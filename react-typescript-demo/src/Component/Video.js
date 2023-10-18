@@ -1,5 +1,5 @@
 import './Video.css'
-const Video=({title ,channel,views,time,verified,id,children})=>{
+const Video=({title ,editVideo,channel,views,time,verified,id,children,deleteVideo})=>{
    
   console.log(verified)
 //    let channelJXS;
@@ -10,10 +10,12 @@ const Video=({title ,channel,views,time,verified,id,children})=>{
     return(
         <div className='container'>
            
-            <div className='pic'>
+        <div className='pic'>
          <img src={`https://picsum.photos/id/${id}/160/90`} alt="video"/>
-       
+         <button className='close' onClick={()=>deleteVideo(id)}>X</button> 
+         <button className='edit' onClick={()=>editVideo(id)}>Edit</button>
        </div>
+
         <div className="title">{title} </div>
         <div className='channel'>{channel} {verified &&"✅"}</div> 
        

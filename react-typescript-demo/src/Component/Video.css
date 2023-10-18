@@ -5,10 +5,14 @@
     width:15em;
     margin:0 0.2em;
     float:left;
+    
+  }
+  .pic{
+    width: 200px;
+    position: relative;
   }
   .pic img{
-    width:100
-    
+    width: 100%;
   }
   .title{
     font-weight: bold;
@@ -23,5 +27,14 @@
   }
   .views span{
     padding:0.2em;
+  }
+  .close{
+    position:absolute;
+    right:0px;
+    border: none;
+  }
+  .edit{
+    position: absolute;
+    right: 3em;border: none;
   }
   
